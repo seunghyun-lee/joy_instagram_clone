@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # OSX
 #
 .DS_Store
@@ -61,3 +62,4 @@ buck-out/
 # Dependency directories
 node_modules/
 jspm_packages/
+
