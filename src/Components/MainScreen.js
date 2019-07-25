@@ -14,7 +14,7 @@ import SearchTab from "../AddTabNavigator/SearchTab";
 
 const AppTabNavigator = createMaterialTopTabNavigator(
   {
-    HomeTab: {
+    Home: {
       screen: HomeTab,
     },
     Search: {
@@ -43,11 +43,11 @@ const AppTabNavigator = createMaterialTopTabNavigator(
         })
       },
       iconStyle: { height: 100 },
-      activeTintColor: '#FFF',
+      activeTintColor: '#e91e63',
       inactiveTintColor: '#d1cece',
       upperCaseLabel: false,
-      showLabel: false,
-      showIcon: true
+      showIcon: true,
+      showLabel: false
     }
   }
 );
@@ -56,9 +56,7 @@ const AppTabContainer = createAppContainer(AppTabNavigator);
 
 class MainScreen extends Component {
   static navigationOptions = {
-    headerLeft: <Icon name="ios-camera" style={{ paddingLeft: 10 }} />,
-    title: 'AwesomApp',
-    headerRight: <Icon name="ios-send" style={{ paddingRight: 10 }} />
+    header: null
   };
 
   render() {
