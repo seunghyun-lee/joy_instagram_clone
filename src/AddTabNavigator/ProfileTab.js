@@ -88,6 +88,12 @@ export default class ProfileTab extends Component {
     );
   }
 
+  static navigationOptions = {
+    tabBarIcon: ({ tintColor }) => (
+      <Icon name="person" style={{ color: tintColor }} />
+    )
+  };
+
   render() {
     const {
       name,

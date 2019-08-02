@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { StyleSheet, View, Text, Platform } from "react-native";
 import { Icon } from "native-base";
 import {
-  createMaterialTopTabNavigator,
+  createBottomTabNavigator,
   createAppContainer
 } from "react-navigation";
 
@@ -12,7 +12,7 @@ import LikesTab from "../AddTabNavigator/LikesTab";
 import ProfileTab from "../AddTabNavigator/ProfileTab";
 import SearchTab from "../AddTabNavigator/SearchTab";
 
-const AppTabNavigator = createMaterialTopTabNavigator(
+const AppTabNavigator = createBottomTabNavigator(
   {
     Home: {
       screen: HomeTab,
